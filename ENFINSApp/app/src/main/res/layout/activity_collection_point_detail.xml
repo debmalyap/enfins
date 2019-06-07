@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CollectionPointDetailActivity">
+
+    <TextView
+        android:id="@+id/textCPDetailHeader"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="60dp"
+        android:paddingLeft="20dp"
+        android:background="#fae596"
+        android:gravity="fill_vertical"
+        android:text="Add New Collection Point"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TableLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textCPDetailHeader"
+        android:stretchColumns="1,2,3">
+
+    <TableRow
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF">
+
+
+        <EditText
+            android:id="@+id/editTextName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_column="1"
+            android:inputType="textPersonName"
+            android:hint="Name" />
+
+
+        <EditText
+            android:id="@+id/editTextFormationDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_column="2"
+            android:inputType="date" />
+
+        <EditText
+            android:id="@+id/editTextBiWeeklyDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_column="3"
+            android:inputType="date" />
+
+    </TableRow>
+        <TableRow
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF">
+
+        <EditText
+            android:id="@+id/editTextAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_column="1"
+            android:layout_span="2"
+            android:inputType="textPersonName"
+            android:hint="Address" />
+
+        <EditText
+            android:id="@+id/editTextPincode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_column="3"
+            android:inputType="textPersonName"
+            android:hint="Pincode" />
+
+    </TableRow>
+
+        <TableRow
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF">
+
+
+            <EditText
+                android:id="@+id/editTextPlace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_column="1"
+                android:inputType="textPersonName"
+                android:hint="Place" />
+
+            <EditText
+                android:id="@+id/editTextMobile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_column="2"
+                android:inputType="textPersonName"
+                android:hint="Mobile No" />
+
+            <EditText
+                android:id="@+id/editTextCollectionday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_column="3"
+                android:inputType="textPersonName"
+                android:hint="Collection Day" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF">
+
+            <Spinner
+                android:id="@+id/spinnerCountry"
+                android:layout_column="1"
+                android:spinnerMode="dialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Spinner
+                android:id="@+id/spinnerState"
+                android:layout_column="2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Spinner
+                android:id="@+id/spinnerDistrict"
+                android:layout_column="3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF">
+
+            <Spinner
+                android:id="@+id/spinnerMunicipality"
+                android:layout_column="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Spinner
+                android:id="@+id/spinnerWard"
+                android:layout_column="2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Spinner
+                android:id="@+id/spinnerBlock"
+                android:layout_column="3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF">
+
+            <Spinner
+                android:id="@+id/spinnerGramPanchayat"
+                android:layout_column="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Spinner
+                android:id="@+id/spinnerVillage"
+                android:layout_column="2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </TableRow>
+
+    </TableLayout>
+
+</android.support.constraint.ConstraintLayout>
